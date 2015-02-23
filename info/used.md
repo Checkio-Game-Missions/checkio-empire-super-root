@@ -1,5 +1,5 @@
 **How it is used:**
 
-This concept can be useful for the cryptography.
-And you will look how work your calculator then calculate roots.
+This concept comes in useful when working in cryptography as complex mathematics often comes into play.
+In addition this skill could come in useful should you find yourself in a situation where you need ot develop a smarter calculator.
 

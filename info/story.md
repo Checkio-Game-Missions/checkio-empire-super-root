@@ -1,3 +1,4 @@
-We have built the super computer and we need super problem for it.
-Square roots, cube roots, 4th roots... each are too boring for the Laboratory mind.
-He needs to find the super root! With your help he will almost certainly find it.
+After some intense work, we have finally completed our super computer, the Labvoratory Mind.
+Now we need super prwwwwwwoblem to test its capabilities.
+Square roots, cube roots, 4th roots... such things are far too boring for the Laboratory Mind.
+It needs to find the super root! With your help we will almost certainly find it together.
