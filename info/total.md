@@ -1,6 +1,5 @@
-We have built the super computer and we need super problem for it.
-Square roots, cube roots, 4th roots... each are too boring for the Laboratory mind.
-He needs to find the super root! With your help he will almost certainly find it.
+After some intense work, we have finally completed our super computer, the Labvoratory Mind. Now we need super prwwwwwwoblem to test its capabilities.
+Square roots, cube roots, 4th roots... such things are far too boring for the Laboratory Mind. It needs to find the super root! With your help we will almost certainly find it together.
 
 The super root of a number **N** is the number **x**,
 such that **x<sup>x</sup>** = **N**.
@@ -22,8 +21,8 @@ super_root(81) == 3.504339593597054
 
 **How it is used:**
 
-This concept can be useful for the cryptography.
-And you will look how work your calculator then calculate roots.
+This concept comes in useful when working in cryptography as complex mathematics often comes into play.
+In addition this skill could come in useful should you find yourself in a situation where you need ot develop a smarter calculator.
 
 
 **Precondition:**
