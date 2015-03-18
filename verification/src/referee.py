@@ -1,5 +1,5 @@
 from checkio_referee import RefereeBase
-from checkio_referee.validators import BaseValidator, ValidationError
+from checkio_referee import validators
 
 import settings
 import settings_env
@@ -7,18 +7,19 @@ from tests import TESTS
 
 PRECISION = 0.001
 
+Result = validators.ValidatorResult
 
-class SuperRootValidator(BaseValidator):
+
+class SuperRootValidator(validators.BaseValidator):
     def validate(self, outer_result):
         if not isinstance(outer_result, (int, float)):
-            self.additional_data = "The result should be a float or an integer."
-            raise ValidationError
+            return Result(False, "The result should be a float or an integer.")
         if abs(outer_result) > 12:
-            raise ValidationError
+            return Result(False)
         p = outer_result ** outer_result
         self.additional_data = p
         if abs(self._test["input"] - p) >= PRECISION:
-            raise ValidationError
+            return Result(False)
 
 
 class Referee(RefereeBase):
