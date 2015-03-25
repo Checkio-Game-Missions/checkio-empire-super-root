@@ -54,5 +54,5 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         checker=checker,  # checkers.float.comparison(2)
-        function_name="super_root"
+        DEFAULT_FUNCTION_NAME="super_root"
     ).on_ready)
