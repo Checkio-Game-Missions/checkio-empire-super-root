@@ -17,9 +17,7 @@ class SuperRootValidator(validators.BaseValidator):
         if abs(outer_result) > 12:
             return Result(False)
         p = outer_result ** outer_result
-        self.additional_data = p
-        if abs(self._test["input"] - p) >= PRECISION:
-            return Result(False)
+        return Result(abs(self._test["input"] - p) < PRECISION, p)
 
 
 class Referee(RefereeBase):
