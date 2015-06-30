@@ -1,4 +1,3 @@
 **Precondition:**
-```python
-1 <= number <= 10 ** 10
-```
+
+`1 ≤ number ≤ 10`<sup>`10`</sup>
