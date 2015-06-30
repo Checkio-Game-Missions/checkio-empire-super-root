@@ -1,5 +1,5 @@
 from checkio_referee import RefereeBase
-from checkio_referee import validators
+from checkio_referee import validators, ENV_NAME
 
 
 import settings_env
@@ -25,4 +25,7 @@ class Referee(RefereeBase):
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
     DEFAULT_FUNCTION_NAME = "super_root"
+    FUNCTION_NAMES = {
+        ENV_NAME.JS_NODE: "superRoot"
+    }
     VALIDATOR = SuperRootValidator
