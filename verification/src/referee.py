@@ -15,9 +15,9 @@ class SuperRootValidator(validators.BaseValidator):
         if not isinstance(outer_result, (int, float)):
             return Result(False, "The result should be a float or an integer.")
         if abs(outer_result) > 12:
-            return Result(False)
+            return Result(False, "Looks like a big number.")
         p = outer_result ** outer_result
-        return Result(abs(self._test["input"] - p) < PRECISION, p)
+        return Result(abs(self._test["input"] - p) < PRECISION, "Your result power is {}".format(p))
 
 
 class Referee(RefereeBase):
